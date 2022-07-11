@@ -1,0 +1,40 @@
+.firm {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 130px;
+    justify-content: center;
+    padding: 100px 20px;
+    @media screen and(max-width: 590px) {
+        flex-direction: column;
+    }
+    &__title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 119%;
+        color: #403E3B;
+        @media screen and(max-width: 800px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    &__block-text {
+        max-width: 493px;
+    }
+    &__text {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #403E3B;
+        margin-bottom: 10px;
+        @media screen and(max-width: 590px) {
+            font-size: 12px;
+        }
+    }
+    &__text:last-child {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,10 @@
+.burger {
+    display: flex;
+    align-items: center;
+    &__element {
+        width: 37px;
+        height: 2px;
+        border-bottom: 4px solid black;
+        margin-top: 3px;
+    }
+}

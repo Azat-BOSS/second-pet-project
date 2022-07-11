@@ -1,6 +1,7 @@
 .intro {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    min-height: calc(100vh - 72px);
     @media screen and(max-width: 550px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -24,12 +25,19 @@
         letter-spacing: 2px;
         text-transform: uppercase;
         color: #645C55;
+        transform: translateY(120%);
+        opacity: 0;
+        transition: .8s ease-in-out;
         @media screen and(max-width: 1000px) {
             font-size: 10px;
         }
         @media screen and(max-width: 705px) {
             font-size: 8px;
         }
+    }
+    &__upper-title._active {
+        transform: translateY(0);
+        opacity: 1;
     }
     &__title {
         font-family: $pop;
@@ -40,12 +48,19 @@
         color: #1B1A1A;
         margin-top: 20px;
         max-width: 417px;
+        transform: translateY(120%);
+        opacity: 0;
+        transition: .8s ease-in-out .1s;
         @media screen and(max-width: 1000px) {
             font-size: 55px;
         }
         @media screen and(max-width: 705px) {
             font-size: 45px;
         }
+    }
+    &__title._active {
+        transform: translateY(0);
+        opacity: 1;
     }
     &__text {
         font-family: $pop;
@@ -56,6 +71,9 @@
         color: #403E3B;
         margin-top: 18px;
         max-width: 509px;
+        transform: translateY(120%);
+        opacity: 0;
+        transition: .8s ease-in-out .2s;
         @media screen and(max-width: 1000px) {
             font-size: 14px;
         }
@@ -65,6 +83,10 @@
         @media screen and(max-width: 550px) {
             max-width: 300px;
         }
+    }
+    &__text._active {
+        transform: translateY(0);
+        opacity: 1;
     }
     &__link {
         font-family: $pop;
@@ -77,13 +99,19 @@
         margin-top: 41px;
         display: flex;
         text-decoration: none;
-        transition: .2s linear;
+        transform: translateY(120%);
+        opacity: 0;
+        transition: .8s ease-in-out .4s;
         @media screen and(max-width: 1000px) {
             font-size: 14px;
         }
         @media screen and(max-width: 705px) {
             font-size: 10px;
         }
+    }
+    &__link._active {
+        opacity: 1;
+        transform: translateY(0);
     }
     &__link:hover {
         opacity: .7;

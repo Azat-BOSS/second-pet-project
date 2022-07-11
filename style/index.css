@@ -333,8 +333,8 @@ table {
   opacity: 0.8;
 }
 
-.page {
-  width: 100%;
+.body_active {
+  overflow: hidden;
 }
 
 .burger {
@@ -348,7 +348,6 @@ table {
   margin-top: 3px;
 }
 
-/* popup */
 .popup {
   position: fixed;
   background-color: white;
@@ -379,6 +378,10 @@ table {
   position: relative;
   left: 110%;
   top: 2%;
+  transition: 0.5s ease-in-out;
+}
+.popup__close-button_active {
+  transform: rotate(180deg);
 }
 .popup__links {
   margin-left: 50px;
@@ -411,6 +414,119 @@ table {
   border-radius: 10px;
   transition: 0.2s linear;
   margin-top: 30px;
+}
+
+.firm {
+  margin: 0 auto;
+  display: flex;
+  column-gap: 130px;
+  justify-content: center;
+  padding: 100px 20px;
+}
+@media screen and (max-width: 590px) {
+  .firm {
+    flex-direction: column;
+  }
+}
+.firm__title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 119%;
+  color: #403E3B;
+}
+@media screen and (max-width: 800px) {
+  .firm__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+.firm__block-text {
+  max-width: 493px;
+}
+.firm__text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #403E3B;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 590px) {
+  .firm__text {
+    font-size: 12px;
+  }
+}
+.firm__text:last-child {
+  margin-bottom: 0px;
+}
+
+.house {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+.house__background {
+  background-image: url("../images/house.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 600px;
+  z-index: -5;
+}
+.house__title {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #403E3B;
+  text-align: left;
+  max-width: 285px;
+  z-index: 5;
+  position: absolute;
+  top: 48%;
+  left: 80%;
+}
+.house__text {
+  font-family: "Poppins", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #645C55;
+  max-width: 285px;
+  position: absolute;
+  top: 54%;
+  left: 80%;
+}
+.house__overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-height: 600px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* ------- */
+.anim-show {
+  transform: translateY(120%);
+  transition: 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.anim-show._active,
+.active .anim-show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
