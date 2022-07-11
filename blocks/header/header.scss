@@ -1,0 +1,63 @@
+.header {
+    max-width: 1440px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        align-items: center;
+        padding: 16px 15px;
+    }
+    &__burger-menu {
+        display: none;
+        @media screen and(max-width: 1000px) {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 7%;
+        }
+    }
+    &__logo {
+        width: 220px;
+        height: 19px;
+        @media screen and(max-width: 1000px) {}
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+        @media screen and(max-width: 1000px) {
+            display: none;
+        }
+    }
+    &__link {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        color: #1B1A1A;
+        text-decoration: none;
+        margin-right: 32px;
+        transition: .2s linear
+    }
+    &__link:hover {
+        opacity: .8;
+    }
+    &__button {
+        @extend .resetButton;
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        background-color: black;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        transition: .2s linear;
+    }
+    &__button:hover {
+        opacity: .8;
+    }
+}

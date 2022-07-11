@@ -1,0 +1,100 @@
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media screen and(max-width: 550px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    &__first {
+        background-color: #ECE7E4;
+        padding: 100px 100px;
+        @media screen and(max-width: 1000px) {
+            padding: 50px 50px;
+        }
+        @media screen and(max-width: 705px) {
+            padding: 25px 25px;
+        }
+    }
+    &__upper-title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #645C55;
+        @media screen and(max-width: 1000px) {
+            font-size: 10px;
+        }
+        @media screen and(max-width: 705px) {
+            font-size: 8px;
+        }
+    }
+    &__title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 110%;
+        color: #1B1A1A;
+        margin-top: 20px;
+        max-width: 417px;
+        @media screen and(max-width: 1000px) {
+            font-size: 55px;
+        }
+        @media screen and(max-width: 705px) {
+            font-size: 45px;
+        }
+    }
+    &__text {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #403E3B;
+        margin-top: 18px;
+        max-width: 509px;
+        @media screen and(max-width: 1000px) {
+            font-size: 14px;
+        }
+        @media screen and(max-width: 705px) {
+            font-size: 10px;
+        }
+        @media screen and(max-width: 550px) {
+            max-width: 300px;
+        }
+    }
+    &__link {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+        color: #1B1A1A;
+        margin-top: 41px;
+        display: flex;
+        text-decoration: none;
+        transition: .2s linear;
+        @media screen and(max-width: 1000px) {
+            font-size: 14px;
+        }
+        @media screen and(max-width: 705px) {
+            font-size: 10px;
+        }
+    }
+    &__link:hover {
+        opacity: .7;
+    }
+    &__second {
+        background-image: url('../images/background.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        max-width: 1440px;
+        width: 100%;
+        height: auto;
+    }
+}
