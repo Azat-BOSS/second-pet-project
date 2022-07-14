@@ -760,55 +760,6 @@ table {
   }
 }
 
-.footer {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  padding: 62px 0;
-}
-@media screen and (max-width: 790px) {
-  .footer {
-    grid-template-columns: 1fr;
-  }
-}
-.footer__second {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-@media screen and (max-width: 790px) {
-  .footer__second {
-    justify-content: start;
-    margin-top: 60px;
-  }
-}
-.footer__block {
-  display: flex;
-  flex-direction: column;
-}
-.footer__logo {
-  width: 256px;
-  height: 22px;
-}
-.footer__text {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.4px;
-  margin-top: 20px;
-}
-.footer__icon {
-  width: 24px;
-  height: 25px;
-  margin-right: 20px;
-}
-.footer__icon:last-child {
-  margin-right: 0px;
-}
-
 .staircase {
   width: 100%;
   min-height: 600px;
@@ -852,15 +803,14 @@ table {
   z-index: 5;
   position: absolute;
   top: 48%;
-  left: 80%;
+  right: 80%;
   margin-right: 30px;
-  padding-bottom: 15px;
 }
 @media screen and (max-width: 1000px) {
   .staircase__title {
     top: 45%;
-    left: 50%;
-    transform: translate(50%, 50%);
+    right: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 12px;
   }
@@ -875,19 +825,20 @@ table {
   max-width: 285px;
   position: absolute;
   top: 54%;
-  left: 80%;
+  right: 80%;
   margin-right: 30px;
 }
 @media screen and (max-width: 1000px) {
   .staircase__text {
     top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%);
+    right: 50%;
+    transform: translate(-50%, -50%);
     color: white;
     font-size: 12px;
   }
 }
 
+/* ------- */
 .anim-show {
   transform: translateY(120%);
   transition: 0.8s ease-in-out;
@@ -900,4 +851,4 @@ table {
   opacity: 1;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=idnex.css.map */

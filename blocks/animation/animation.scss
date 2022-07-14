@@ -1,0 +1,11 @@
+.anim-show {
+    transform: translateY(120%);
+    transition: .8s ease-in-out;
+    opacity: 0;
+}
+
+.anim-show._active,
+.active .anim-show {
+    transform: translateY(0);
+    opacity: 1;
+}

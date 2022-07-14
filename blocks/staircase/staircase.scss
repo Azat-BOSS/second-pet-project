@@ -1,0 +1,72 @@
+.staircase {
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    &__background {
+        background-image: url('../../../images/staircase.png');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 600px;
+        z-index: -5;
+    }
+    &__overlay {
+        background-color: rgba(0, 0, 0, .2);
+        width: 100%;
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        @media screen and(max-width: 1000px) {
+            background-color: rgba(0, 0, 0, .4);
+        }
+    }
+    &__title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #403E3B;
+        text-align: left;
+        max-width: 285px;
+        z-index: 5;
+        position: absolute;
+        top: 48%;
+        left: 80%;
+        margin-right: 30px;
+        padding-bottom: 15px;
+        @media screen and(max-width: 1000px) {
+            top: 45%;
+            left: 50%;
+            transform: translate(50%, 50%);
+            color: white;
+            font-size: 12px
+        }
+    }
+    &__text {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #645C55;
+        max-width: 285px;
+        position: absolute;
+        top: 54%;
+        left: 80%;
+        margin-right: 30px;
+        @media screen and(max-width: 1000px) {
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 50%);
+            color: white;
+            font-size: 12px
+        }
+    }
+}

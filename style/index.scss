@@ -2,75 +2,14 @@
 @import '../vendor/reset';
 @import '../blocks/intro/intro';
 @import '../blocks/main/main';
-@import '../blocks/header/header.scss';
-@import '../blocks/body/body.scss';
-@import '../blocks/burger/burger.scss';
-@import '../blocks/popup/popup.scss';
+@import '../blocks/header/header';
+@import '../blocks/body/body';
+@import '../blocks/burger/burger';
+@import '../blocks/popup/popup';
 @import '../blocks/firm/firm';
-.house {
-    width: 100%;
-    min-height: 600px;
-    position: relative;
-    &__background {
-        background-image: url('../images/house.png');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 600px;
-        z-index: -5;
-    }
-    &__title {
-        font-family: $pop;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 143%;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: #403E3B;
-        text-align: left;
-        max-width: 285px;
-        z-index: 5;
-        position: absolute;
-        top: 48%;
-        left: 80%;
-    }
-    &__text {
-        font-family: $pop;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 150%;
-        color: #645C55;
-        max-width: 285px;
-        position: absolute;
-        top: 54%;
-        left: 80%;
-    }
-    &__overlay {
-        background-color: rgba(0, 0, 0, .2);
-        width: 100%;
-        min-height: 600px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-    }
-}
-
-
-/* ------- */
-
-.anim-show {
-    transform: translateY(120%);
-    transition: .8s ease-in-out;
-    opacity: 0;
-}
-
-.anim-show._active,
-.active .anim-show {
-    transform: translateY(0);
-    opacity: 1;
-}
+@import '../blocks/house/house';
+@import '../blocks/slider/slider';
+@import '../blocks/customer/customer';
+@import '../blocks/footer/footer.scss';
+@import '../blocks/staircase/staircase.scss';
+@import '../blocks/animation/animation.scss'

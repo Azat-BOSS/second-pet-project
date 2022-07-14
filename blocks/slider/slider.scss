@@ -1,0 +1,99 @@
+.slider {
+    margin: 0 auto;
+    padding: 100px 20px;
+    &__upper-title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #645C55;
+        margin-bottom: 13px;
+    }
+    &__title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 42px;
+        text-align: center;
+        color: #1B1A1A;
+        margin-bottom: 47px;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        @media screen and(max-width: 1024px) {
+            justify-content: normal;
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 380px;
+        transition: .4s ease-in-out;
+        border-radius: 10px;
+    }
+    &__block:hover {
+        @media screen and(min-width: 1024px) {
+            transform: translateY(-10px);
+            -webkit-box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+            box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+        }
+    }
+    &__block-image {
+        max-width: 117px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    &__block-title {
+        font-family: $pop;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        text-align: center;
+        color: #403E3B;
+        margin-bottom: 10px;
+    }
+    &__block-text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #645C55;
+        max-width: 294px;
+    }
+}
+
+.swiper {
+    max-width: 380px;
+    height: 330px;
+    -webkit-box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+    box-shadow: 3px 5px 16px -6px rgba(34, 60, 80, 0.2);
+    padding-top: 10px;
+}
+
+.ladder {
+    &__background {
+        background-image: url('../images/background_2.png');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 600px;
+        z-index: -5;
+    }
+}
+
+:root {
+    --swiper-theme-color: black;
+}
